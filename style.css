@@ -16,10 +16,16 @@ body{
     height: 60vh;
     width: 100%;
 }
+.logo{
+    padding: 20px;
+}
 .hero{
     display: flex;
     justify-content: space-between;
     
+}
+.navbar{
+    padding: 10px;
 }
 .navbar ul{
     display: flex;
@@ -267,19 +273,19 @@ button:hover{
     body{
         overflow-x: hidden;
     }
-    .navbar{
+    .navbar ul{
         display: none;
     }
-    .menu{
+    .hero .menu{
         display: block;
     }
     #Home{
         width: 489px;
     }
     .hero-title{
-        text-align: center;
+        text-align: left;
         justify-content: center;
-        align-items: center;
+        align-items: start;
     }
     .about{
         width: 370px;
@@ -299,32 +305,33 @@ button:hover{
     }
     .stander{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         gap: 10px;
     }
     .deluxe{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         gap: 10px;
     }
     .Suite{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         gap: 10px;
     }
     .family{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         gap: 10px;
     }
     .executive{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         gap: 10px;
     }
     .facilities-container{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
     }
     .facility-card{
         width: 370px;
@@ -377,11 +384,14 @@ button:hover{
         margin-right: 30px;
         padding: 10px;
     }
+    .logo{
+        padding: 20px;
+    }
     .menu{
         display: none;
     }
     #Home{
-        width: 800px;
+        width: 820px;
     }
     .hero-title{
         text-align: center;
@@ -431,19 +441,19 @@ button:hover{
     }
     .facilities-container{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
     }
     .facility-card{
-        width: 740px;
+        width: 370px;
         margin-left: 10px;
         margin-top: 6rem;
         height: 650px;
     }
     .img{
-        width: 740px;
+        width: 370px;
     }
     .img img{
-        width: 740px;
+        width: 370px;
         object-fit: cover;
     }
     .contact{
