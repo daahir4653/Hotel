@@ -20,6 +20,7 @@ body{
     padding: 20px;
 }
 .hero{
+    position: relative;
     display: flex;
     justify-content: space-between;
     
@@ -56,11 +57,12 @@ body{
     margin-top: 10px;
     margin-right: 10px;
     padding: 4px;
-    display: none;
+    opacity: 0;
 }
 .hero-title{
-    margin-top: 60px;
-    margin-left: 20px;
+    position: absolute;
+    top: 30%;
+    left: 15%;
     font-size: 1.5rem;
     color: var(--Headings);
     
@@ -273,14 +275,22 @@ button:hover{
     body{
         overflow-x: hidden;
     }
+    #Home .hero{
+        display: flex;
+        flex-direction: column;
+    }
     .navbar ul{
         display: none;
     }
-    .hero .menu{
-        display: block;
+    .hero .menu {
+        opacity: 1;
+        font-size: 2rem;
+        
     }
     #Home{
-        width: 489px;
+        width: 100vh;
+        height: 40vh;
+        text-align: left;
     }
     .hero-title{
         text-align: left;
@@ -291,14 +301,28 @@ button:hover{
         width: 370px;
     }
     .contener{
+        width: 190px;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
+    .contener,
+    .stander,
+    .deluxe,
+    .Suite,
+    .family,
+    .executive,.facilities-container{
+        display: grid;
+        grid-template-columns: 1fr; /* Hal column */
+        gap: 15px;
+        justify-items: center;
+        width: 90%;
+        margin: auto;
+        margin-right: 30px;
+    }
     .card{
         width: 185px;
-        
     }
     .img-placholder .imag{
         width: 185px;
@@ -328,20 +352,20 @@ button:hover{
         grid-template-columns: repeat(1,1fr);
         gap: 10px;
     }
-    .facilities-container{
+    .Facilities .facilities-container{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: 1fr;
         gap: 10px;
     }
     .facility-card{
-        width: 370px;
+        width: 185px;
         margin-left: 10px;
     }
     .img{
-        width: 370px;
+        width: 185px;
     }
     .img img{
-        width: 370px;
+        width: 185px;
         object-fit: cover;
     }
     .contact{
@@ -350,7 +374,7 @@ button:hover{
         align-items: center;
     }
     .form{
-        width: 370px;
+        width: 185px;
         padding: 20px;
     }
     .form-group input{
@@ -381,7 +405,7 @@ button:hover{
     }
     .navbar{
         display: block;
-        margin-right: 30px;
+        margin-right: 40px;
         padding: 10px;
     }
     .logo{
@@ -444,16 +468,16 @@ button:hover{
         grid-template-columns: repeat(2,1fr);
     }
     .facility-card{
-        width: 370px;
+        width: 350px;
         margin-left: 10px;
         margin-top: 6rem;
         height: 650px;
     }
     .img{
-        width: 370px;
+        width: 350px;
     }
     .img img{
-        width: 370px;
+        width: 350px;
         object-fit: cover;
     }
     .contact{
